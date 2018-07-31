@@ -16,6 +16,6 @@
 * [Variational Methods in Computer Vision](https://vision.in.tum.de/tutorials/eccv2010).
 * [3D Reconstruction from multiple views](https://vision.in.tum.de/research/image-based_3d_reconstruction/multiviewreconstruction).
 
-# Get started:
+# Get started with:
 * With this simple Interesting tutorial on [Head Pose Estimation using OpenCV and Dlib
 ](https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/). Belive me you will learn a lot.

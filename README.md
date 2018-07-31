@@ -18,4 +18,4 @@
 
 # Get started with:
 * With this simple Interesting tutorial on [Head Pose Estimation using OpenCV and Dlib
-](https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/). Belive me you will learn a lot.
+](https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/). Belive me you will learn a lot for a beginner with this project.

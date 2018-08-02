@@ -24,8 +24,10 @@
 * [In this tutorial you will learn how to use the reconstruction api for sparse reconstruction.](https://docs.opencv.org/3.4/d4/d18/tutorial_sfm_scene_reconstruction.html)
 * [Variational Methods in Computer Vision](https://vision.in.tum.de/tutorials/eccv2010).
 * [3D Reconstruction from multiple views](https://vision.in.tum.de/research/image-based_3d_reconstruction/multiviewreconstruction).
+* [Live 3D Reconstruction on Mobile Phones - ETH Zurich](https://www.research-collection.ethz.ch/handle/20.500.11850/115965).
 
 # Books and online courses:
+ * [Computer Vision: Algorithms and Applications has a dedicated chapter on **3D reconstruction** and other interesting applications](http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf). [Book is from this author](http://szeliski.org/Book/).
  * [Online Course for Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).
  * [Book- Computer Vision: From 3D Reconstruction to Visual Recognition](https://g.co/kgs/9du8m1).
 # Get started with:

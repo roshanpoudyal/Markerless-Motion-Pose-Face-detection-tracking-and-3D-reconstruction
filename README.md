@@ -27,8 +27,8 @@
 * [Live 3D Reconstruction on Mobile Phones - ETH Zurich](https://www.research-collection.ethz.ch/handle/20.500.11850/115965).
 
 # Books and online courses:
- * [Computer Vision: Algorithms and Applications has a dedicated chapter on **3D reconstruction** and other interesting applications](http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf). [Book is from this author](http://szeliski.org/Book/).
  * [Online Course for Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).
+ * [Computer Vision: Algorithms and Applications has a dedicated chapter on **3D reconstruction** and other interesting applications](http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf). [Book is from this author](http://szeliski.org/Book/).
  * [Book- Computer Vision: From 3D Reconstruction to Visual Recognition](https://g.co/kgs/9du8m1).
 # Get started with:
 * With this simple Interesting tutorial on [Head Pose Estimation using OpenCV and Dlib

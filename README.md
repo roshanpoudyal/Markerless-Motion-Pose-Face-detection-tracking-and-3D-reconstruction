@@ -2,9 +2,9 @@
 # Markerless Motion and/or Pose and/or Face detection and/or tracking and  it's 3D reconstruction (in real time)
 
 # Inspiration:
+ * I get chill in my bones when camera captured images and videos (or live videos) turn into 3D virtual characters and their motion into its animation. I want to pursue this feeling.
  * [What is Visual Computing?](https://en.wikipedia.org/wiki/Visual_computing).
  * [What is 3D reconstruction?](https://en.wikipedia.org/wiki/3D_reconstruction). This link gives a basic foundational idea on 3D reconstruction from images. **Using 3D reconstruction one can determine any object’s 3D profile, as well as knowing the 3D coordinate of any point on the profile.** from section **Motivation and applications** from this link is euphoric. Plus the methods for 3D reconstruction and in detail explanation of **Binocular stereo vision** and how it works is beautiful. There are other sources and external link.
- * I get chill in my bones when camera captured images turn into 3D virtual characters and their motion into its animation. I want to pursue this feeling.
  * [Real time face reconstruction in 3D](https://cgl.ethz.ch/publications/papers/paperBic12.php).
  * [Videos collection from ETH Zurich Computer graphics lab](https://www.youtube.com/channel/UCaooTmnNbpkDvR8DdIUzgYA).
  * [ETH Zurich Computer Graphics webiste with links to its research and published papers](https://graphics.ethz.ch/research/).
@@ -31,6 +31,10 @@
  * [Online Course for Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).
  * [Computer Vision: Algorithms and Applications has a dedicated chapter on **3D reconstruction** and other interesting applications](http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf). [Book is from this author](http://szeliski.org/Book/).
  * [Book- Computer Vision: From 3D Reconstruction to Visual Recognition](https://g.co/kgs/9du8m1).
+
+# On Computer Graphics:
+* You sure will have to know much about computer Graphics too along with Computer Vision.
+* Get started with [Ogre3D tutorials](http://wiki.ogre3d.org/Tutorials). This will help you understand 3D Graphics programming as well as help you shine your C++ skills.
 
 # Get started with:
 * **A MUST HAVE COURSE ON MATHEMATICAL FOUNDATION FOR VISUAL COMPUTING** [Computational Science and Engineering I](https://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/index.htm), its video lectures collection are [here](https://www.youtube.com/watch?v=CgfkEUOFAj0&list=PLF706B428FB7BD52C).

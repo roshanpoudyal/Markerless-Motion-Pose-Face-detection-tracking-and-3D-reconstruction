@@ -31,10 +31,10 @@
  * [Online Course for Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).
  * [Computer Vision: Algorithms and Applications has a dedicated chapter on **3D reconstruction** and other interesting applications](http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf). [Book is from this author](http://szeliski.org/Book/).
  * [Book- Computer Vision: From 3D Reconstruction to Visual Recognition](https://g.co/kgs/9du8m1).
+
 # Get started with:
 * **A MUST HAVE COURSE ON MATHEMATICAL FOUNDATION FOR VISUAL COMPUTING** [Computational Science and Engineering I](https://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/index.htm), its video lectures collection are [here](https://www.youtube.com/watch?v=CgfkEUOFAj0&list=PLF706B428FB7BD52C).
-* With this simple Interesting tutorial on [Head Pose Estimation using OpenCV and Dlib
-](https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/). Belive me you will learn a lot for a beginner with this project.
+* Start with this tutorial on [3D scene reconstruction from these set of OpenCV Tutorials called Structure From Motion](https://docs.opencv.org/3.4/de/d7c/tutorial_table_of_content_sfm.html). Make sure you do the tutorials in sequence and make sure the version of this OpenCV docs matches with the version of OpenCV version you are using.
 
 # Future direction:
   * 3D pose estimation

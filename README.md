@@ -5,6 +5,7 @@
  * I get chill in my bones when camera captured images and videos (or live videos) turn into 3D virtual characters and their motion into its animation. I want to pursue this feeling.
  * [What is Visual Computing?](https://en.wikipedia.org/wiki/Visual_computing).
  * [What is 3D reconstruction?](https://en.wikipedia.org/wiki/3D_reconstruction). This link gives a basic foundational idea on 3D reconstruction from images. **Using 3D reconstruction one can determine any object’s 3D profile, as well as knowing the 3D coordinate of any point on the profile.** from section **Motivation and applications** from this link is euphoric. Plus the methods for 3D reconstruction and in detail explanation of **Binocular stereo vision** and how it works is beautiful. There are other sources and external link.
+ * [What is Structure From Motion and its application in 3D reconstruction](https://en.wikipedia.org/wiki/Structure_from_motion).
  * [Real time face reconstruction in 3D](https://cgl.ethz.ch/publications/papers/paperBic12.php).
  * [Videos collection from ETH Zurich Computer graphics lab](https://www.youtube.com/channel/UCaooTmnNbpkDvR8DdIUzgYA).
  * [ETH Zurich Computer Graphics webiste with links to its research and published papers](https://graphics.ethz.ch/research/).

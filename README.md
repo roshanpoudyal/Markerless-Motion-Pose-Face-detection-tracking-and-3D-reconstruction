@@ -26,7 +26,7 @@
 * [Variational Methods in Computer Vision](https://vision.in.tum.de/tutorials/eccv2010).
 * [3D Reconstruction from multiple views](https://vision.in.tum.de/research/image-based_3d_reconstruction/multiviewreconstruction).
 * [Live 3D Reconstruction on Mobile Phones - ETH Zurich](https://www.research-collection.ethz.ch/handle/20.500.11850/115965).
-* Things related to [computer vision](https://medium.com/readers-writers-digest/beginners-guide-to-computer-vision-23606224b720).
+* Beginners guide to [computer vision](https://medium.com/readers-writers-digest/beginners-guide-to-computer-vision-23606224b720).
 * A [curated list of computer vision resources](https://github.com/jbhuang0604/awesome-computer-vision).
 
 # Books and online courses:

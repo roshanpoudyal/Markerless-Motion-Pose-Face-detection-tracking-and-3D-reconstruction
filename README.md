@@ -26,7 +26,8 @@
 * [Variational Methods in Computer Vision](https://vision.in.tum.de/tutorials/eccv2010).
 * [3D Reconstruction from multiple views](https://vision.in.tum.de/research/image-based_3d_reconstruction/multiviewreconstruction).
 * [Live 3D Reconstruction on Mobile Phones - ETH Zurich](https://www.research-collection.ethz.ch/handle/20.500.11850/115965).
-* Things related to [computer vision](https://medium.com/readers-writers-digest/beginners-guide-to-computer-vision-23606224b720). * A [curated list of computer vision resources](https://github.com/jbhuang0604/awesome-computer-vision).
+* Things related to [computer vision](https://medium.com/readers-writers-digest/beginners-guide-to-computer-vision-23606224b720).
+* A [curated list of computer vision resources](https://github.com/jbhuang0604/awesome-computer-vision).
 
 # Books and online courses:
  * **A MUST HAVE COURSE ON MATHEMATICAL FOUNDATION FOR VISUAL COMPUTING** [Computational Science and Engineering I](https://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/index.htm), its video lectures collection are [here](https://www.youtube.com/watch?v=CgfkEUOFAj0&list=PLF706B428FB7BD52C). _**This course provides a review of linear algebra, including applications to networks, structures, and estimation, Lagrange multipliers. Also covered are: differential equations of equilibrium; Laplace's equation and potential flow; boundary-value problems; minimum principles and calculus of variations; Fourier series; discrete Fourier transform; convolution; and applications.**_

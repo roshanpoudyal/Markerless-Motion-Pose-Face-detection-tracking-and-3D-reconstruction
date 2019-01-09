@@ -18,6 +18,8 @@
  * Again from University of Bonn on [3D Pose Estimation from a Single Monocular Image
 ](http://cg.cs.uni-bonn.de/en/publications/paper-details/yasin2015/).
 * [3D reconstruction from multiple images wiki information and other external links here](https://en.wikipedia.org/wiki/3D_reconstruction_from_multiple_images).
+* [The Multi-View Environment, MVE](https://www.gcc.tu-darmstadt.de/home/proj/mve/), is an implementation of a complete end-to-end pipeline for image-based geometry reconstruction. It features Structure-from-Motion, Multi-View Stereo and Surface Reconstruction. MVE is written in C++ and comes with a set of efficient, cross-platform and easy-to-use libraries. The code runs on Linux, MacOS X and Windows.
+* [Middlebury Computer Vision Pages](http://vision.middlebury.edu/) is a repository for computer vision evaluations and datasets. See the [Middlebury Stereo Vision Page](http://vision.middlebury.edu/stereo/) and [Middlebury Multi-View Stereo Vision Page](http://vision.middlebury.edu/mview/) for more relevant info for this project.
 
 # Other tutorials and links :
 * Interesting tutorial on [Head Pose Estimation using OpenCV and Dlib

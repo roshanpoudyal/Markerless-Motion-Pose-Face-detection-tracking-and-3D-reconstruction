@@ -44,6 +44,7 @@
 
 # Get started with:
 * **A MUST HAVE COURSE ON MATHEMATICAL FOUNDATION FOR VISUAL COMPUTING** [Computational Science and Engineering I](https://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/index.htm), its video lectures collection are [here](https://www.youtube.com/watch?v=CgfkEUOFAj0&list=PLF706B428FB7BD52C).
+* Practice this [machine vision application playground](https://github.com/roshanpoudyal/machine_vision_application.git) first to make urself acquainted with machine/computer vision techniques and algorithms. 
 * Start with this tutorial on [3D scene reconstruction from these set of OpenCV Tutorials called Structure From Motion](https://docs.opencv.org/3.4/de/d7c/tutorial_table_of_content_sfm.html). Make sure you do the tutorials in sequence and make sure the version of this OpenCV docs matches with the version of OpenCV version you are using.
 * This tutorial as well on [Real Time pose estimation of a textured object
 ](https://docs.opencv.org/3.4.2/dc/d2c/tutorial_real_time_pose.html).

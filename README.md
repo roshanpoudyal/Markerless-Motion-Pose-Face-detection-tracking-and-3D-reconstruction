@@ -36,6 +36,8 @@
  * [Online Course for Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv).
  * [Computer Vision: Algorithms and Applications has a dedicated chapter on **3D reconstruction** and other interesting applications](http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf). [Book is from this author](http://szeliski.org/Book/).
  * [Book- Computer Vision: From 3D Reconstruction to Visual Recognition](https://g.co/kgs/9du8m1).
+ * Here is a course in edx from TUM Munich on [Autonomous Navigation for Flying Robots](https://www.edx.org/course/autonomous-navigation-flying-robots-tumx-autonavx-0) which is adopted from [their own university MOOC course](https://www.tum.de/en/about-tum/news/press-releases/detail/article/31494/). It gives concepts on 3D reconstruction as well.
+
 
 # On Computer Graphics:
 * You sure will have to know much about computer Graphics too along with Computer Vision.

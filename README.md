@@ -46,6 +46,15 @@
 * You sure will have to know much about computer Graphics too along with Computer Vision.
 * Also complete with TODO mentioned on [this OpenGL playground of yours](https://github.com/roshanpoudyal/OpenGl_playground).
 
+### Noteworthy open source libraries for visual computing:
+1. [CGAL](https://www.cgal.org/) is a software project that provides easy access to efficient and reliable geometric algorithms in the form of a C++ library. CGAL is used in various areas needing geometric computation, such as geographic information systems, computer aided design, molecular biology, medical imaging, computer graphics, and robotics.
+2. [The Visualization Toolkit (VTK)](https://vtk.org/) is an open-source, freely available software system for 3D computer graphics, modeling, image processing, volume rendering, scientific visualization, and 2D plotting. It supports a wide variety of visualization algorithms and advanced modeling techniques, and it takes advantage of both threaded and distributed memory parallel processing for speed and scalability, respectively.
+3. [The Point Cloud Library (or PCL)](http://pointclouds.org/) is a large scale, open project [1] for 2D/3D image and point cloud processing. The PCL framework contains numerous state-of-the art algorithms including filtering, feature estimation, surface reconstruction, registration, model fitting and segmentation.
+4. [OpenCV (Open Source Computer Vision Library)](https://opencv.org/) is an open source computer vision and machine learning software library.
+5. Althouh the libraries I mention in this point are far related to project topic, however they are noteworthy libraries under visual computing area :
+    - [The Geospatial Data Abstraction Library (GDAL)](https://www.gdal.org/) is a computer software library for reading and writing raster and vector geospatial data formats. Although it is used for GIS data I have put it here because it can come under visual computing with raster GIS data.
+    - Another, library which uses GDAL is [Orfeo Toolbox](https://www.orfeo-toolbox.org/) which also can fall under visual computing because it works on using maching learning and computer vision with GIS raster images.
+
 ### Get started with:
 * Practice on this [machine vision application playground](https://github.com/roshanpoudyal/machine_vision_application.git) first to make urself acquainted with machine/computer vision techniques and algorithms. 
 * Start with this tutorial on [3D scene reconstruction from these set of OpenCV Tutorials called Structure From Motion](https://docs.opencv.org/3.4/de/d7c/tutorial_table_of_content_sfm.html). Make sure you do the tutorials in sequence and make sure the version of this OpenCV docs matches with the version of OpenCV version you are using.

@@ -44,7 +44,7 @@
 
 ### On Computer Graphics:
 * You sure will have to know much about computer Graphics too along with Computer Vision.
-* Also complete with TODO mentioned on [this OpenGL playground of yours](https://github.com/roshanpoudyal/OpenGl_playground).
+* Also complete with TODO mentioned on [this OpenGL playground of yours](https://github.com/roshanpoudyal/3D_interactive_graphics_rendering_engine).
 
 ### Noteworthy open source libraries for visual computing:
 1. [CGAL](https://www.cgal.org/) is a software project that provides easy access to efficient and reliable geometric algorithms in the form of a C++ library. CGAL is used in various areas needing geometric computation, such as geographic information systems, computer aided design, molecular biology, medical imaging, computer graphics, and robotics.

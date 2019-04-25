@@ -21,6 +21,7 @@ set(CHAPTERS
 # sub chapters for getting_started_opencv chapter
 set(getting_started_opencv
     opencv_application_with_cmake_test
+    video_read_offline_online_opencv
 )
 
 

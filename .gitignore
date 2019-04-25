@@ -40,6 +40,8 @@
 *.i*86
 *.x86_64
 *.hex
+# everything inside any build folder from C,C++ and CMake
+*/build/* 
 
 # Debug files
 *.dSYM/
@@ -58,13 +60,22 @@ dkms.conf
 
 ### C++ ###
 # Prerequisites
+*.d
 
 # Compiled Object files
 *.slo
+*.lo
+*.o
+*.obj
 
 # Precompiled Headers
+*.gch
+*.pch
 
 # Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
 
 # Fortran module files
 *.mod
@@ -72,8 +83,16 @@ dkms.conf
 
 # Compiled Static libraries
 *.lai
+*.la
+*.a
+*.lib
 
 # Executables
+*.exe
+*.out
+*.app
+# everything inside any build folder from C,C++ and CMake
+*/build/* 
 
 ### CMake ###
 CMakeLists.txt.user

@@ -13,6 +13,7 @@ find_package( OpenCV REQUIRED )
 # chapters
 set(CHAPTERS
     getting_started_opencv
+    camera_calibration_3d_reconstruction
 )
 
 # sub chapters
@@ -22,6 +23,11 @@ set(CHAPTERS
 set(getting_started_opencv
     opencv_application_with_cmake_test
     video_read_offline_online_opencv
+)
+
+# sub chapters for camera_calibration_3d_reconstruction chapter
+set(camera_calibration_3d_reconstruction
+    camera_calibration
 )
 
 

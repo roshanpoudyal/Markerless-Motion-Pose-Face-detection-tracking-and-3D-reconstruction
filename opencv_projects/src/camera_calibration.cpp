@@ -2,9 +2,11 @@
 * TODO : camera calibration
 * ref : https://docs.opencv.org/4.1.0/dc/dbb/tutorial_py_calibration.html
 * ref : https://www.cds.caltech.edu/~murray/wiki/images/6/68/Assignment_1_MECS132A.pdf
+* ref : https://stackoverflow.com/a/10346021
 */
 
 #include <opencv2/opencv.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <iostream>
 
 using namespace cv;
@@ -25,13 +27,23 @@ int main()
     while(1)
     {
         Mat live_camera_frame; // create a Mat object to store single frame from live camera feed
+        Mat gray_live_camera_frame; // Mat object to store the live camera frame converted to grayscale
         live_camera >> live_camera_frame; // get new frame from camera for this loop iteration
-
-        imshow("livecamera", live_camera_frame); // show this live camera frame in our previously initialized named window
+        
+        cvtColor(live_camera_frame, gray_live_camera_frame, COLOR_BGR2GRAY);
+        imshow("livecamera", gray_live_camera_frame); // show this live camera frame in our previously initialized named window
 
         // create a condition to break this never ending loop : if ESC (ASCII code is 27) key is pressed
-        if(waitKey(30) == 27 ) break;
+        if(waitKey(30) == 27 )
+        {
+            destroyWindow("livecamera");    
+            break;
+        }
+        else // if live stream does not break go on with remaining code
+        {
+            // some code
+            null;
+        }        
     }
-
     return 0;
 }

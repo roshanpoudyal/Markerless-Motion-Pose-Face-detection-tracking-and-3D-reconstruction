@@ -23,6 +23,12 @@ int main()
 
     namedWindow("livecamera",1); // initialize a named window to display live camera feed
 
+    // create cv::Point3f vector to store 3D object points from all images
+    std::vector<std::vector<Point3f>> objectPoints;
+
+    // create cv::Point2f vector to store 2D image points from all images
+    std::vector<std::vector<Point2f>> imagePoints;
+
     // display new live camera frame on every iteration of the never ending loop such that we see a video
     while(1)
     {

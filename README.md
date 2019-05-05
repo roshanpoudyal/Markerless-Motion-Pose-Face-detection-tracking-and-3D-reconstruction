@@ -41,6 +41,9 @@
 7. Big bunch of and series of [computer vision teachings from Stanford University vision lab](http://vision.stanford.edu/teaching.html). For example:
     - [CS131 Computer Vision: Foundations and Applications](http://vision.stanford.edu/teaching/cs131_fall1819/index.html).
     - [CS231A: Computer Vision, From 3D Reconstruction to Recognition](http://web.stanford.edu/class/cs231a/).
+8. [Lecture videos on Computer Vision For Visual Effects](https://cvfxbook.com/video-lectures/) by Richard J. Radke.
+    - Here is the [youtube playlist](https://www.youtube.com/playlist?list=PLuh62Q4Sv7BUJlKlt84HFqSWfW36MDd5a) on the same.
+    - Associated is [this book on Computer Vision for Visual Effects](https://cvfxbook.com/about/). The book describes classical computer vision algorithms used on a regular basis in Hollywood (such as blue-screen matting, structure from motion, optical flow, and feature tracking) and exciting recent developments that form the basis for future effects (such as natural image matting, multi-image compositing, image retargeting, and view synthesis).
 
 ### On Computer Graphics:
 * You sure will have to know much about computer Graphics too along with Computer Vision.

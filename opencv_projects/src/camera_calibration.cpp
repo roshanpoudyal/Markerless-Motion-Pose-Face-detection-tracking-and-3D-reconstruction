@@ -7,6 +7,10 @@
     * ref 5: https://docs.opencv.org/4.1.0/dd/d1a/group__imgproc__feature.html#ga354e0d7c86d0d9da75de9b9701a9a87e : for cornerSubPix() function definition
     * ref 6: https://docs.opencv.org/3.4/da/d54/group__imgproc__transform.html#ga47a974309e9102f5f08231edc7e7529d : resize() api for image in opencv
     * ref 7: https://docs.opencv.org/4.1.0/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d : calibrateCamera() api and its parameters description
+    * 
+    * Tip : while calibrating camera from live video feed, like we are doing. It was found that if the room was illuminated better, for example in bright daylight,
+    *       the chessboard patterns were found easily (I do not have the reason for it now). If you do not have bright sunny day or similar, it can help if you can,
+    *       point a direct light to the camera you are using for calibration and then feed the chessboard pattern to the camera.
 */
 
 #include <opencv2/opencv.hpp>
@@ -47,6 +51,32 @@ int main()
     // we shall use the dimension WIDTH=426 && HEIGHT=240
     Size imageSize(426,240);
 
+    // create vector of opencv type Point3f to store detected object corners (in 3d)
+    std::vector<Point3f> object_corners;
+
+    // create vector of opencv type Point2f to store detected object corners (in 2d) in chessboard image,
+    // this will first be udpated by findChessboardCorners() api and later refined with cornerSubPix() api, if chessboard pattern is found
+    std::vector<Point2f> chessboard_image_corners;
+
+    // now initialize object_corners, when all the images used for calibration will have similar corner size, Object corners will be same for all images and can be reused
+    // Additionally, the third dimension is zero because we have our object (chessboard pattern image) in 3D with no z-dimension
+    for(int i=0; i < chessboard_pattern_size.height; i++)
+    {
+        for(int j=0; j < chessboard_pattern_size.width; j++)
+        {
+            object_corners.push_back(Point3f(i,j,0.0f)); 
+        }
+    }
+
+    // define rotation and translation matrix, camera matrix, distrotion coffecient, to be used as parameters for calibrateCamera() api
+    Mat camera_matrix;
+    Mat distortion_coefficients;
+    Mat rotation_vectors;
+    Mat translation_vectors;
+
+    // counter to keep count of number of chessboard pattern found, initialized to zero
+    u_int chessboard_pattern_found_count = 0;
+
     // display new live camera frame on every iteration of the never ending loop such that we see a video
     while(1)
     {
@@ -65,17 +95,14 @@ int main()
 
         imshow("livecamera", gray_live_camera_frame); // show this live camera frame in our previously initialized named window
 
-        // create vector of opencv type Point2f to store detected corners it also will store refined corners from cornerSubPix() api
-        std::vector<Point2f> chessboard_corners;
-
         // now let us find chess board corners and return the status if found as well
         bool chessboard_pattern_found = findChessboardCorners(gray_live_camera_frame, 
                                                     chessboard_pattern_size,
-                                                    chessboard_corners,
+                                                    chessboard_image_corners,
                                                     CALIB_CB_ADAPTIVE_THRESH
                                                     + CALIB_CB_NORMALIZE_IMAGE
                                                     + CALIB_CB_FAST_CHECK);
-
+        
         // create a condition to break this never ending loop : if ESC (ASCII code is 27) key is pressed
         if(waitKey(30) == 27 ) 
         {
@@ -84,21 +111,61 @@ int main()
         }
         else if(chessboard_pattern_found) // if chessboard pattern is found do these computations in this scope 
         {
-            std::cout << "chessboard pattern found" << std::endl;
+            std::cout << "number of chessboard pattern found = " << ++chessboard_pattern_found_count << std::endl;
 
             // the detected corners with findChessboardCorners() function is approximate
             // cornerSubPix() function iterates to find the sub-pixel accurate location of corners
             // and refines corner locations for more accuracy
-            cornerSubPix(gray_live_camera_frame, chessboard_corners, Size(11,11), Size(-1,-1),
+            cornerSubPix(gray_live_camera_frame, chessboard_image_corners, Size(11,11), Size(-1,-1),
                     TermCriteria(TermCriteria::EPS + TermCriteria::MAX_ITER, 30, 0.1));
             
+            // if number of corners found in image is equal to size of chessboard_pattern
+            // push image corners to imagePoints and push object corners to objectPoints for current image
+            // imagePoints and objectPoints will be used to calibrate camera later
+            if(chessboard_image_corners.size() == chessboard_pattern_size.area()){
+                imagePoints.push_back(chessboard_image_corners);
+                objectPoints.push_back(object_corners);
+            }
+
             // now draw chess board corners on every frame a pattern is found but on not grayscale but colorful video frame
             // so that the drawing is seen colorful
-            drawChessboardCorners(live_camera_frame, chessboard_pattern_size, chessboard_corners, chessboard_pattern_found);
+            drawChessboardCorners(live_camera_frame, chessboard_pattern_size, chessboard_image_corners, chessboard_pattern_found);
 
             imshow("drawcorners", live_camera_frame);
-            
         }        
     }
+
+    // you are here! it means that the while loop has broken, we no longer read any images
+    std::cout << " you have stopped the while loop. We are no longer taking image inputs. " << std::endl;
+    // now we shall calibrate the camera, as we have the required objectPoints and corresponding imagePoints
+    std::cout << " Now, calibrating camera... " << std::endl;
+    calibrateCamera(objectPoints, imagePoints, imageSize, camera_matrix, distortion_coefficients, 
+            rotation_vectors, translation_vectors, 0);
+
+    // finally we save the parameter information in an xml file
+    std::cout << " Now, we try to write camera parameter information in a xml/yml file... " << std::endl;
+    
+    // open camera_parameters.yml file to write the camera parameters in it
+    FileStorage file_camera_param("../resources/result_opencv_xml_yml_files/camera_calibration_and_3d_reconstruction/camera_parameters.yml", FileStorage::WRITE);
+    
+    if(file_camera_param.isOpened()) // if the file above was opened to write then we do the following block
+    {
+        std::cout << "we were able to read file - camera_parameters.yml- now we write camera parameters in this file..." << std::endl;
+        std::cout << "writing camera matrix - the intrinsic camera parameters..." << std::endl;
+        file_camera_param << "intrinsic_camera_parameters" << camera_matrix;
+
+        std::cout << "writing camera distortion coefficients..." << std::endl;
+        file_camera_param << "distortion_coefficients" << distortion_coefficients;
+
+        std::cout << "closing the opened file..." << std::endl;
+        file_camera_param.release();
+
+        std::cout << "exiting the application..." << std::endl;
+    }
+    else
+    {
+        std::cout << "NOT able to read file. Could not save camera parameters. Exiting the application..." << std::endl;
+    }
+
     return 0;
 }

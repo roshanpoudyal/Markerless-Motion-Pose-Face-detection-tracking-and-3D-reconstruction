@@ -1,12 +1,14 @@
 /*
     * TODO : camera calibration
     * ref 1: https://docs.opencv.org/4.1.0/dc/dbb/tutorial_py_calibration.html
+    * ref 1.2 : https://docs.opencv.org/4.1.0/d4/d94/tutorial_camera_calibration.html : camera calib using c++ opencv
     * ref 2: https://www.cds.caltech.edu/~murray/wiki/images/6/68/Assignment_1_MECS132A.pdf
     * ref 3: https://stackoverflow.com/a/10346021
     * ref 4: https://docs.opencv.org/4.1.0/d9/d0c/group__calib3d.html#ga93efa9b0aa890de240ca32b11253dd4a : sample usage of detecting and drawing chessboard corners section in this link
     * ref 5: https://docs.opencv.org/4.1.0/dd/d1a/group__imgproc__feature.html#ga354e0d7c86d0d9da75de9b9701a9a87e : for cornerSubPix() function definition
     * ref 6: https://docs.opencv.org/3.4/da/d54/group__imgproc__transform.html#ga47a974309e9102f5f08231edc7e7529d : resize() api for image in opencv
     * ref 7: https://docs.opencv.org/4.1.0/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d : calibrateCamera() api and its parameters description
+    * ref 8: https://docs.opencv.org/4.1.0/dd/d74/tutorial_file_input_output_with_xml_yml.html : read, write xml/yml files with opencv
     * 
     * Tip : while calibrating camera from live video feed, like we are doing. It was found that if the room was illuminated better, for example in bright daylight,
     *       the chessboard patterns were found easily (I do not have the reason for it now). If you do not have bright sunny day or similar, it can help if you can,
@@ -152,10 +154,10 @@ int main()
     {
         std::cout << "we were able to read file - camera_parameters.yml- now we write camera parameters in this file..." << std::endl;
         std::cout << "writing camera matrix - the intrinsic camera parameters..." << std::endl;
-        file_camera_param << "intrinsic_camera_parameters" << camera_matrix;
+        file_camera_param << "camera_matrix" << camera_matrix; // write intrinsic camera parameters : camera matrix
 
         std::cout << "writing camera distortion coefficients..." << std::endl;
-        file_camera_param << "distortion_coefficients" << distortion_coefficients;
+        file_camera_param << "distortion_coefficients" << distortion_coefficients; // write distortion coefficients
 
         std::cout << "closing the opened file..." << std::endl;
         file_camera_param.release();

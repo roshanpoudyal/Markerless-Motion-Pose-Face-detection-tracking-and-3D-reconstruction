@@ -28,6 +28,7 @@ set(getting_started_opencv
 # sub chapters for camera_calibration_3d_reconstruction chapter
 set(camera_calibration_3d_reconstruction
     camera_calibration
+    undistortion_image_with_camera_params
 )
 
 

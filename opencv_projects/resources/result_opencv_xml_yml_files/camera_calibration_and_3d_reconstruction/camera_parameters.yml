@@ -1,6 +1,6 @@
 %YAML:1.0
 ---
-intrinsic_camera_parameters: !!opencv-matrix
+camera_matrix: !!opencv-matrix
    rows: 3
    cols: 3
    dt: d
